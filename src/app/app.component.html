@@ -1,0 +1,80 @@
+<main>
+
+  <div class="biocont">
+    <img src="https://files.catbox.moe/l9b0uz.jpg" alt="Me" />
+    <h1>Alan Jeffrey Garcia</h1>
+
+    <h3>
+      My name is Alan Jeffrey Garcia and I have a Bachelor's in Computer Science from UCI. Different areas that I have studied include Data Management, Machine Learning,
+      Data Structures and Algorithms, and Probabilistic and Deterministic Graphical Models. My current interests lie in cloud computing and I am currently working towards getting certified in Azure.</h3>
+  </div>
+
+  <h1 style="text-align: center;">
+    PROJECTS
+  </h1>
+
+  <!-- The container for first project -->
+  <div class="container">
+
+    <div class="left">
+      <h1>Minecraft Malmo Agent Maze Solver</h1>
+
+      <h3>
+        Designed and implemented a 30x30 maze by utilizing Malmo XML that allowed for further experimentation in environment or reproducibility.
+        Implemented an agent that utilizes tabular Q-Learning in Python that selected actions and updated Q-values to converge towards the optimal path.
+        Tuned hyperparameters (learning rate, discount factor, and e-greedy epsilon value) resulting in maze completion in less than 30 episodes.
+        Utilized Matplotlib to visualize convergence of rewards from each episode.
+      </h3>
+
+    </div>
+
+    <div class="right">
+      <img src="https://files.catbox.moe/90f6x8.gif" alt="Malmo GIF" />
+
+    </div>
+
+  </div>
+
+  <!-- The container for second project -->
+  <div class="container">
+
+    <div class="right">
+      <img src="https://files.catbox.moe/61jl4g.gif" alt="Indexer GIF" />
+
+    </div>
+
+    <div class="left">
+      <h1>Indexer/Query Engine</h1>
+
+      <h3>
+        Wrote Python script that parsed over 53,000 static web pages into roughly 2 mb inverted index JSON shards to constrain RAM usage.
+        Externally merged JSON shards and alphabetically sharded finalized inverted index file for efficient storage and retrieval.
+        Developed a simple web GUI search engine allowing end-users to make queries, returning top 5 URL results in under 300 ms.
+      </h3>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="left">
+      <h1>Income > 50k Predictor</h1>
+
+      <h3 style="font-size: 0.95em;">
+        Loaded the UCI Adult dataset and split into train/test. Cleaned and combined numeric and one‑hot encoded features to ensure consistent indexing and string column names.
+        Executed GridSearchCV over key parameters (max_depth, min_samples_split, n_estimators) using accuracy as the scoring metric, selected the optimal hyperparameter set, and resulted in a reduced train/test accuracy gap compared to the default RandomForestClassifier model.
+        Trained a XGBoost classifier on the processed training data, then independently ran a GridSearchCV‑wrapped XGBoost on the same split. Recorded 0.887% training vs 0.872% test accuracy for the XGBoost model and 0.877% vs. 0.886% for the grid‑searched model to directly compare their performance.
+      </h3>
+
+    </div>
+
+    <div class="right">
+      <img src="https://files.catbox.moe/fbhd4p.gif" alt="ML GIF" />
+
+    </div>
+
+  </div>
+  
+</main>
+<router-outlet />
